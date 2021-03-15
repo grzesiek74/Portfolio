@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRESKICode</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d98467416f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="mobile">
+        <div class="navbar">
+            <div class="logo">
+                <p>GRESKI<span>Code</span></p>
+            </div>
+            <button class="burger"><i class="fas fa-bars show"></i><i class="fas fa-times"></i></button>
+        </div>
+        <div class="nav-list">
+            <a href="#home" class="nav-link">Start</a>
+            <a href="#about" class="nav-link">O mnie</a>
+            <a href="#service" class="nav-link">Usługi</a>
+            <a href="#skills" class="nav-link">Umiejętności</a>
+            <a href="#projects" class="nav-link">Projekty</a>
+            <a href="#contact" class="nav-link">Kontakt</a>
+        </div>
+    </nav>
+    <nav class="desktop">
+        <div class="logo">
+            <p>GRESKI<span>Code </span></p>
+        </div>
+        <div class="nav-list">
+            <a href="#home" class="nav-link">Start</a>
+            <a href="#about" class="nav-link">O mnie</a>
+            <a href="#service" class="nav-link">Usługi</a>
+            <a href="#skills" class="nav-link">Umiejętności</a>
+            <a href="#projects" class="nav-link">Projekty</a>
+            <a href="#contact" class="nav-link">Kontakt</a>
+        </div>
+    </nav>
+
+    <header id="home" class="home">
+        <div class="hero-image">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <p data-aos="fade-left" data-aos-delay="200">Cześć, jestem</p>
+                <h1 data-aos="fade-left" data-aos-delay="500">Grzesiek Duliński</h1>
+                <h3 data-aos="fade-left" data-aos-delay="800">Developer <span>Freelancer</span></h3>
+                <a href="#about" class="meet-me" data-aos="fade-up" data-aos-delay="1100">Poznaj mnie</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>O mnie</h2>
+            <div class="underline"></div>
+            <div class="content">
+                <div class="portrait" data-aos="flip-left" data-aos-delay="200"></div>
+                <div class="text" data-aos="flip-left" data-aos-delay="400">
+                    <h3>Jestem <span>Grzesiek</span>, a to kilka słów o mnie</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo alias minima assumenda
+                        cupiditate temporibus eligendi omnis sapiente sint nam. Velit pariatur harum quisquam maiores
+                        unde id, accusantium non hic lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit architecto repudiandae sit. Facere nesciunt architecto dolorem, quidem unde iusto
+                        ratione?.</p>
+                    <!-- <button class="cv">Pobierz CV</button> -->
+                    <a href="files/cv.docx" class="cv" download>Pobierz CV</a>
+                </div>
+            </div>
+        </section>
+        <section class="hobby">
+            <div class="shadow-bg"></div>
+            <h2>W wolnym czasie...</h2>
+            <div class="underline"></div>
+            <div class="hobby-slick">
+                <div class="item">
+                    <img src="img/hobby.jpg" alt="bieganie">
+                    <h3>Biegam</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at! Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="img/hobby2.jpg" alt="podróże">
+                    <h3>Podróżuję</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at! Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="img/hobby3.jpg" alt="kodowanie">
+                    <h3>Piszę kod</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at! Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="img/hobby4.jpg" alt="znajomi">
+                    <h3>Spotykam się ze znajomymi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at! Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="img/hobby5.jpg" alt="gotowanie">
+                    <h3>Gotuję</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at! Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="service" class="service">
+            <h2>Oferuję</h2>
+            <div class="underline"></div>
+            <div class="wrapper">
+                <div class="item">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Tworzenie stron <span>internetowych</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ab voluptatem ipsum eligendi
+                        exercitationem sed ipsam perferendis et quibusdam? Culpa.</p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Tworzenie aplikacji <span>webowych</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ab voluptatem ipsum eligendi
+                        exercitationem sed ipsam perferendis et quibusdam? Culpa.</p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Tworzenie aplikacji <span>mobilnych</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ab voluptatem ipsum eligendi
+                        exercitationem sed ipsam perferendis et quibusdam? Culpa.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="shadow-bg"></div>
+            <h2>Co potrafię</h2>
+            <div class="underline"></div>
+            <div class="wrapper">
+                <div class="text" data-aos="zoom-in" data-aos-delay="300">
+                    <h3>Moje Umiejętności i doświadczenie</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, architecto eaque ipsum sit
+                        aperiam molestias? Provident excepturi optio quae, dicta rem neque aspernatur facere, iusto
+                        similique quos tempora porro fugit. </p>
+                </div>
+                <div class="progress" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="progress-item">
+                        <div class="technology">
+                            <img src="img/html.png" alt="html">
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bar one" style="width: 90%;">
+                                <p class="percent">90%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="technology">
+                            <img src="img/css.png" alt="css">
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bar two" style="width: 80%;">
+                                <p class="percent">80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="technology">
+                            <img src="img/js.png" alt="javascript">
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bar three" style="width: 50%;">
+                                <p class="percent">50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="technology">
+                            <img src="img/react.png" alt="react">
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bar four" style="width: 10%;">
+                                <p class="percent">10%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Moje projekty</h2>
+            <div class="underline"></div>
+            <div class="project-slick">
+                <div class="project">
+                    <img src="img/project2.png" alt="project">
+                    <div class="content">
+                        <div class="text">
+                            <h3>Kalkulator BMI</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                        </div>
+                        <div class="github">
+                            <h4>Zobacz na GitHub:</h4>
+                            <a href="#">Live <i class="fab fa-github"></i></a>
+                            <a href="#">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project3.png" alt="project">
+                    <div class="content">
+                        <div class="text">
+                            <h3>Książka Serwisowa Pojazdu</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                        </div>
+                        <div class="github">
+                            <h4>Zobacz na GitHub:</h4>
+                            <a href="#">Live <i class="fab fa-github"></i></a>
+                            <a href="#">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project4.png" alt="project">
+                    <div class="content">
+                        <div class="text">
+                            <h3>TODO App</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                        </div>
+                        <div class="github">
+                            <h4>Zobacz na GitHub:</h4>
+                            <a href="#">Live <i class="fab fa-github"></i></a>
+                            <a href="#">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Skontaktuj się ze mną</h2>
+            <div class="underline"></div>
+            <div class="contact-shadow"></div>
+            <div class="wrapper">
+                <form class="message">
+                    <input class="name" type="text" placeholder="Twoje imię">
+                    <input class="mail" type="text" placeholder="Email">
+                    <textarea class="msg" rows="5" placeholder="Twoja wiadomość"></textarea>
+                    <button class="send">Wyślij</button>
+                </form>
+                <div class="info">
+                    <div class="text">
+                        <h4>Napisz do mnie!</h4>
+                        <p>Jeśli chcesz dowiedzieć się więcej to skorzystaj z formularza kontaktowego lub z poniższych
+                            opcji.</p>
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <p><i class="fab fa-facebook-f"></i> Facebook</p>
+                        </a>
+                        <a href="#">
+                            <p><i class="fas fa-at"></i> grzesiek746@gmail.com</p>
+                        </a>
+                        <a href="#">
+                            <p><i class="fab fa-github"></i> GitHub</p>
+                        </a>
+                        <a href="#">
+                            <p><i class="fab fa-discord"></i> Discord</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>GRESKICode 2021 | Copyright &copy;</p>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slicksettings.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aossettings.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
