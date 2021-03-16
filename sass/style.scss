@@ -448,7 +448,7 @@ h2 {
   text-align: center;
   color: $main-color;
   // font-style: italic;
-  text-shadow: 0 0 2px black;
+  // text-shadow: 0 0 2px black;
   text-transform: uppercase;
   font-weight: 300;
   z-index: 2;
@@ -1360,6 +1360,11 @@ h2 {
       min-height: 200px;
       margin: 0 auto;
 
+      label {
+        color: white;
+        font-size: 14px;
+      }
+
       input,
       textarea {
         padding: 10px;
@@ -1383,6 +1388,43 @@ h2 {
         color: white;
         border: none;
         border-radius: 5px;
+      }
+
+      // Walidator
+
+      .form-box {
+        margin-bottom: 15px;
+      }
+
+      .form-box label {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .form-box input,
+      .form-box textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .form-box.error input,
+      .form-box.error textarea {
+        border: 1px solid rgb(0, 137, 250);
+        background-color: rgba(0, 137, 250, 0.1);
+        color: white;
+      }
+
+      .form-box .error-text {
+        margin: 5px 0 0 10px;
+        font-size: 14px;
+        color: rgb(0, 137, 250);
+        visibility: hidden;
+      }
+
+      .form-box.error .error-text {
+        visibility: visible;
+        margin: 0 auto;
       }
     }
 
@@ -1569,6 +1611,99 @@ h2 {
     }
   }
 }
+
+// POPUP
+
+.popup {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: $main-color;
+  color: white;
+  border-radius: 5px;
+  button {
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $main-color;
+    font-weight: bold;
+  }
+}
+
+.popup-show {
+  display: flex;
+}
+
+@media (min-width: 375px) {
+  .popup {
+    width: 320px;
+    height: 200px;
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .popup {
+    width: 500px;
+    height: 250px;
+
+    p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .popup {
+    width: 650px;
+    height: 350px;
+
+    p {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 22px;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    }
+
+    button:hover {
+      color: white;
+      background-color: transparent;
+      border-color: white;
+    }
+  }
+}
+
+// FOOTER
 
 footer {
   height: 10vh;

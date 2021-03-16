@@ -401,7 +401,6 @@ h2 {
   padding-top: 30px;
   text-align: center;
   color: #56688f;
-  text-shadow: 0 0 2px black;
   text-transform: uppercase;
   font-weight: 300;
   z-index: 2;
@@ -1284,6 +1283,11 @@ h2 {
   margin: 0 auto;
 }
 
+.contact .wrapper .message label {
+  color: white;
+  font-size: 14px;
+}
+
 .contact .wrapper .message input,
 .contact .wrapper .message textarea {
   padding: 10px;
@@ -1327,6 +1331,41 @@ h2 {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+.contact .wrapper .message .form-box {
+  margin-bottom: 15px;
+}
+
+.contact .wrapper .message .form-box label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.contact .wrapper .message .form-box input,
+.contact .wrapper .message .form-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact .wrapper .message .form-box.error input,
+.contact .wrapper .message .form-box.error textarea {
+  border: 1px solid #0089fa;
+  background-color: rgba(0, 137, 250, 0.1);
+  color: white;
+}
+
+.contact .wrapper .message .form-box .error-text {
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  color: #0089fa;
+  visibility: hidden;
+}
+
+.contact .wrapper .message .form-box.error .error-text {
+  visibility: visible;
+  margin: 0 auto;
 }
 
 .contact .wrapper .info {
@@ -1520,6 +1559,99 @@ h2 {
 @media (min-width: 1440px) {
   .contact .wrapper {
     padding: 60px 0 30px;
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #56688f;
+  color: white;
+  border-radius: 5px;
+}
+
+.popup button {
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #56688f;
+  font-weight: bold;
+}
+
+.popup-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 375px) {
+  .popup {
+    width: 320px;
+    height: 200px;
+  }
+  .popup p {
+    font-size: 18px;
+  }
+  .popup button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 660px) {
+  .popup {
+    width: 500px;
+    height: 250px;
+  }
+  .popup p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .popup button {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .popup {
+    width: 650px;
+    height: 350px;
+  }
+  .popup p {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .popup button {
+    padding: 15px 30px;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  }
+  .popup button:hover {
+    color: white;
+    background-color: transparent;
+    border-color: white;
   }
 }
 

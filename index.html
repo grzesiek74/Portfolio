@@ -199,7 +199,8 @@
                     <div class="content">
                         <div class="text">
                             <h3>Kalkulator BMI</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam. Projekt jedynie
+                                na wersję desktop. </p>
                         </div>
                         <div class="github">
                             <h4>Zobacz na GitHub:</h4>
@@ -215,7 +216,8 @@
                     <div class="content">
                         <div class="text">
                             <h3>Książka Serwisowa Pojazdu</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam. Projekt jedynie
+                                na wersję desktop.</p>
                         </div>
                         <div class="github">
                             <h4>Zobacz na GitHub:</h4>
@@ -231,7 +233,8 @@
                     <div class="content">
                         <div class="text">
                             <h3>TODO App</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam. Projekt jedynie
+                                na wersję desktop.</p>
                         </div>
                         <div class="github">
                             <h4>Zobacz na GitHub:</h4>
@@ -250,9 +253,21 @@
             <div class="contact-shadow"></div>
             <div class="wrapper">
                 <form class="message">
-                    <input class="name" type="text" placeholder="Twoje imię">
-                    <input class="mail" type="text" placeholder="Email">
-                    <textarea class="msg" rows="5" placeholder="Twoja wiadomość"></textarea>
+                    <div class="form-box">
+                        <label for="name">Imię:</label>
+                        <input class="name" type="text" placeholder="Adam">
+                        <small class="error-text"></small>
+                    </div>
+                    <div class="form-box">
+                        <label for="mail">Twój e-mail:</label>
+                        <input class="mail" type="text" placeholder="adam.nowak@gmail.com">
+                        <small class="error-text"></small>
+                    </div>
+                    <div class="form-box">
+                        <label for="msg">Widaomość:</label>
+                        <textarea class="msg" rows="5" placeholder="Twoja wiadomość"></textarea>
+                        <small class="error-text"></small>
+                    </div>
                     <button class="send">Wyślij</button>
                 </form>
                 <div class="info">
@@ -276,6 +291,10 @@
                         </a>
                     </div>
                 </div>
+                <div class="popup">
+                    <p>Wiadomość wysłana!</p>
+                    <button class="ok">OK</button>
+                </div>
             </div>
         </section>
     </main>
@@ -289,6 +308,7 @@
     <script src="js/slicksettings.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aossettings.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 </body>
 
